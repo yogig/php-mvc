@@ -1,33 +1,15 @@
-h1. Important note!
-
-Versions 0.3.0, 0.3.1 and 0.3.2 are broken.
-
-Please switch to version 0.3.3 if you experience any problems
-
 h1. About
 
 A structure I use to get started with PHP projects.
 
 It enables the developer to hook up plugins and let's you use pretty URLs
 
-h2. Test it!
+Test it!
 
 * To test this project, just download the zip (or tar.gz, or fork it etc).
 * Place it in your web servers root (remember to include the .htaccess file!).
 * start your web server and head to: http://localhost/web/test
 
-
-h1. Usage
-
-I've added some README files in the various folders.
-
-The web/index.php is the heart of the system.
-_This means that your web applications root folder is the "web" folder._
-
-All requests go through this file and it decides how the routing of the app 
-should be.
-You can add additional hooks in this file to add certain routes etc (a better
-system for this will arrive one day).
 
 h2. Structure
 
@@ -93,19 +75,3 @@ A general error handling has been added.
 
 As default, the error controller just shows the exception occured, so remember
 to style the error controller's view file (app/views/error/error.phtml)
-
-h1. Changelog
-
-I'll start having changelog information at the bottom of this page.
-
-h2. Version 0.6
-* Completely revised system with controllers, models and views.
-* New router added.
-* You now have to define routes
-* added a config/setting.ini file, where you define database settings (password etc)
-
-h2. Version 0.3.3
-
-* Added the missing vendor folder.
-* Fixed an error with exposing the application root (.htaccess file fix).
-* Fixed an error where all files in the vendor scripts folder was read into the system. Only .php files are now read.
